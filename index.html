@@ -54,36 +54,40 @@
 	p {max-width:640px;text-align:left;line-height:1.5em;font-size:1.2em;}
 	</style>
 
-	<!-- video banner -->
+	<!-- header -->
+	<div style="position:fixed;top:0;left:0;padding:1em;background:white;width:100%;align-content:start;z-index:100;flex-direction:row;justify-content:start;">
+		<img style=width:1em;margin-right:0.25em; src=aroma-base-favicon.jpg />
+		Aromabase Lab
+	</div>
+
+	<!-- cover banner -->
 	<div style=position:relative;width:100%;overflow:hidden;>
+		<img src=images/ai_nail_designs_be7cb10b-cf49-47b1-948a-8c036e41b764.webp style=max-height:90vh;width:100%;object-fit:cover; />
 
-		<video playsinline autoplay muted Loop poster="blue_ocean_waves.jpg" style=position:absolute;top:0;left:0;object-fit:cover;height:100%;width:100%;z-index:-100; >
-			<source src="blue_ocean_waves_5a0ca8.mp4" type="video/mp4">
-		</video>
+		<!--
+		<style>
+		.shadow {
+			-webkit-filter: drop-shadow( 0px 0px 2px rgba(0,0,0,1));
+			filter: drop-shadow( 0px 0px 1px rgba(255,255,255,1));
+			/* Similar syntax to box-shadow */
+		}
+		</style>
+		<img class=shadow src=aroma-base-logo-web.svg style=position:absolute;max-height:90vh;width:90vw; />
+		-->
+	</div>
 
-
-		<!-- header -->
-		<div style="position:fixed;top:0;left:0;padding:1em;background:white;width:100%;align-content:start;z-index:100;flex-direction:row;justify-content:start;">
-			<img style=width:1em;margin-right:0.25em; src=aroma-base-favicon.jpg />
-			Aromabase Lab
-			
-		</div>
-		<div style="opacity:80%;padding:1em;text-align:center;flex-direction:column;justify-content:space-evenly;">
-
-			<div style=margin:2em;></div>
-			<H1>Harness Nature's Healing Power</H1>
-			<p>
-                        Founded in 2015, our journey began with a focus on
-                        sharing the benefits of aromatherapy and natural oils,
-                        which has evolved into a comprehensive approach to
-                        holistic wellness. At Aroma Base Limited, we are
-                        passionate about harnessing the power of nature to
-                        enhance the well-being and quality of life for
-                        individuals and families.
-			</p>
-
-		</div>
-
+	<!-- section -->
+	<div style="padding:1em;text-align:center;flex-direction:column;justify-content:space-evenly;position:relative;">
+		<H1>Harness Nature's Healing Power</H1>
+		<p>
+		Founded in 2015, our journey began with a focus on
+		sharing the benefits of aromatherapy and natural oils,
+		which has evolved into a comprehensive approach to
+		holistic wellness. At Aroma Base Limited, we are
+		passionate about harnessing the power of nature to
+		enhance the well-being and quality of life for
+		individuals and families.
+		</p>
 	</div>
 
 	<!-- banner -->
@@ -191,8 +195,8 @@
 	<!-- footer -->
 	<div style=padding:1em;>
 		<H1>Connect for Wellness</H1>
-		<a style=font-size:2em; href=mailto:info@aromabaselab.com>info@aromabaselab.com</a>
-		<img src=aroma-base-logo.jpg style=max-width:80vw;margin:1em; />
+		<a style=font-size:2em;color:#083344;text-decoration:none; href=mailto:info@aromabaselab.com>info@aromabaselab.com</a>
+		<img src=aroma-base-logo-web.png style=max-width:80vw;margin:1em; />
 		<p>© 2025 Aromabase Lab</p>
 	</div>
 </body>
