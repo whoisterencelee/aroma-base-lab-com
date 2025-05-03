@@ -55,9 +55,22 @@
 	</style>
 
 	<!-- header -->
-	<div style="position:fixed;top:0;left:0;padding:1em;background:white;width:100%;align-content:start;z-index:100;flex-direction:row;justify-content:start;">
-		<img style=width:1em;margin-right:0.25em; src=aroma-base-favicon.jpg />
-		Aromabase Lab
+	<div style="position:fixed;top:0;left:0;background:white;width:100%;align-content:start;z-index:100;flex-direction:row;justify-content:start;">
+		<div style=flex-direction:row;padding:1em;>
+			<img style=width:1em;margin-right:0.25em; src=aroma-base-favicon.jpg />
+			Aromabase Lab
+		</div>
+		<menu style=display:flex;flex-direction:row;flex-grow:1;justify-content:end;padding:0;>
+			<style>
+				menu div {margin:0 1em;}
+				menu a {margin:0 1em;text-decoration:none;}
+				menu a:visited { color:#083344; }
+			</style>
+			<a href="#aboutus">About us</a>
+			<a href="#products">Products</a>
+			<a href="#rnd">R&amp;D</a>
+			<a href="#workshop">Workshop</a>
+		</menu>
 	</div>
 
 	<!-- cover banner -->
@@ -77,6 +90,7 @@
 	</div>
 
 	<!-- section -->
+	<div id=aboutus style=scroll-margin-top:4.2em;></div>
 	<div style="padding:1em;text-align:center;flex-direction:column;justify-content:space-evenly;position:relative;">
 		<H1>Harness Nature's Healing Power</H1>
 		<p>
@@ -91,6 +105,7 @@
 	</div>
 
 	<!-- banner -->
+	<div id=products style=scroll-margin-top:4.2em;></div>
 	<div style=background:#a7f3d0;padding:1em;>
 
 		<H1>Our Offerings</H1>
@@ -129,6 +144,7 @@
                         </p>
 		</div>
 		<div>
+			<div id=rnd style=scroll-margin-top:4.2em;></div>
 			<H2>Biotech Research and Innovation</H2>
 			<p>
 			</p>
@@ -136,6 +152,7 @@
 	</div>
 
 	<!-- section -->
+	<div id=workshop style=scroll-margin-top:4.2em;></div>
 	<div style=background:#083344;color:white;padding:1em;>
 		<H2>we also provide</H2>
 		<p>Sales of branded products and raw materials</p>
