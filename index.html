@@ -31,13 +31,13 @@
 
   <meta name="referrer" content="no-referrer-when-downgrade"><!-- important https://web.dev/referrer-best-practices/ -->
   <meta name="theme-color" content="#82cfed">
-  <script> $=>(a){document.getElementById(a)} </script>
-	<style>
+  <script>function $(n){return typeof n == "object" ? n : document.getElementById(n)}</script>
+  <style>
 	@font-face {
 		font-family: Urbanist;
 		src: url(urbanist.woff2);
 	}
-	</style>
+  </style>
 
 
 </head>
@@ -53,6 +53,34 @@
 	.unselectable {-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 	p {max-width:640px;text-align:left;line-height:1.5em;font-size:1.2em;}
 	</style>
+
+	<!-- covering -->
+	<script>
+		function enlarge( event ){
+			if( event.target.src ){
+				$( "covering" ).style.display = "flex"
+				$( "coveringimage" ).style.display = "none"
+				$( "coveringvideo" ).style.display = "none"
+				if( event.target.src.match( /.mp4$/ ) ){
+					$( "coveringvideosource" ).src = event.target.src
+					$( "coveringvideo" ).style.display = "block"
+				} else {
+					$( "coveringimage" ).src = event.target.src
+					$( "coveringimage" ).style.display = "block"
+				}
+			}
+		}
+		function dislarge(){ 
+			$( "covering" ).style.display = "none" 
+		}
+	</script>
+	<div id=covering style=display:none;background:rgba(0,0,0,0.8);z-index:200;position:fixed;width:100vw;height:100vh;left:0;top:0;flex-direction:column;justify-content:center;align-items:center;>
+		<div style="font-size:3em;color:white;position:absolute;right:0;top:0" onclick="dislarge()"> &#x2717; </div>
+		<img id=coveringimage style=margin:2em;max-width:80vw;max-height:80vh;width:auto; src="images/default.jpg" />
+		<video id=coveringvideo controls muted style=margin:2em;max-width:80vw;max-height:80vh;width:auto;>
+			<source id=coveringvideosource src="videos/default.mp4" type=video/mp4 />
+		</video>
+	</div>
 
 	<!-- header -->
 	<div style="position:fixed;top:0;left:0;background:white;width:100%;align-content:start;z-index:100;flex-direction:row;justify-content:start;">
@@ -142,6 +170,23 @@
                         same care and attention they devote to their mental
                         and emotional health.
                         </p>
+			<div id=gallery style=flex-direction:row; onclick=enlarge(event)>
+				<style>
+					#gallery img {width:25vw;margin:1vw;}
+				</style>
+				<img src="products/thrive/thrive_chef_love_zh.jpg" />
+				<img src="products/thrive/thrive_everyday.jpg" />
+				<img src="products/thrive/thrive_everyday_zh.jpg" />
+				<img src="products/thrive/thrive_everydayspray.jpg" />
+				<img src="products/thrive/thrive_everydayspray_zh.jpg" />
+				<img src="products/thrive/thrive_longfry_uses_zh.jpg" />
+				<img src="products/thrive/thrive_longfry_zh.jpg" />
+				<img src="products/thrive/thrive_premium.jpg" />
+				<img src="products/thrive/thrive_premium_zh.jpg" />
+				<img src="products/thrive/thrive_reserve.jpg" />
+				<img src="products/thrive/thrive_reserve_zh.jpg" />
+			</div>
+			<p style=font-size:0.8em;margin-top:0;>click to enlarge</p>
 		</div>
 		<div>
 			<div id=rnd style=scroll-margin-top:4.2em;></div>
@@ -187,24 +232,24 @@
 	<div style=background:#083344;color:white;padding:1em;>
 		<H2>Team</H2>
 		<div style=flex-direction:row;>
-			<div>
+			<div style="border:1px solid aqua;padding:1em;margin:1em;">
 				<h2>Saidu, Muhammad Bashir</h2>
 				<p>PhD in Biotechnology</p>
 				<p>R&amp;D Director</p>
 				<p>Procurement/import of products</p>
 				<p>Technical adviser</p>
 			</div>
-			<div>
+			<div style="border:1px solid aqua;padding:1em;margin:1em;">
 				<h2>Ho Kit Ieng</h2>
 				<p>Bachelor of pharmaceutical inspection</p>
 				<p>Qualification of UK IFA aromatherapist</p>
 				<p>Lecturer and workshop facilitator</p>
 			</div>
-			<div>
+			<div style="border:1px solid aqua;padding:1em;margin:1em;">
 				<h2>Terence Lee</h2>
 				<p>Engineer</p>
 				<p>Social Entrepreneur</p>
-				<p>Digital Tools Development</p>
+				<p>Digital Platform Development</p>
 			</div>
 		</div>
 	</div>
