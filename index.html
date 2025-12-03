@@ -37,6 +37,7 @@
 		font-family: Urbanist;
 		src: url(urbanist.woff2);
 	}
+	tm { vertical-align: super; font-size: x-small; font-family:Arial }
   </style>
 
 
@@ -80,6 +81,7 @@
 		<video id=coveringvideo controls muted style=margin:2em;max-width:80vw;max-height:80vh;width:auto;>
 			<source id=coveringvideosource src="videos/default.mp4" type=video/mp4 />
 		</video>
+		<div style=color:white; onclick=dislarge()> click here to return &#x21f2;</div>
 	</div>
 
 	<!-- header -->
@@ -104,7 +106,6 @@
 	<!-- cover banner -->
 	<div style=position:relative;width:100%;overflow:hidden;>
 		<img src=images/ai_nail_designs_be7cb10b-cf49-47b1-948a-8c036e41b764.webp style=max-height:90vh;width:100%;object-fit:cover; />
-		<a href=products/thrive/Thrive_kit.pdf><img src=products/thrive/thrive_kit_pg1.png style=position:absolute;right:3vw;bottom:3vw;height:40%;transform:rotate(5deg); /></a>
 
 		<!--
 		<style>
@@ -135,25 +136,74 @@
 
 	<!-- banner -->
 	<div id=products style=scroll-margin-top:4.2em;></div>
-	<div style=background:#a7f3d0;padding:1em;>
 
-		<H1>Our Offerings</H1>
-		<div>
-			<H2>Aromatherapy and natural products</H2>
+	<div style=background:#d9583f;color:white;padding:1em;>
+		<H1> 全澳獨家首發!! </H1>
+		<a href=products/thrive/Thrive_kit.pdf><img src=products/thrive/thrive_kit_pg1.png style=transform:rotate(3deg); /></a>
+		<img style=height:60px;transform:rotate(-3deg);position:relative;top:-20px; src=images/hand_click.png></img>
+	</div>
+	<div style=background:white;color:#a96654;padding:1em;>
+		<H2> 如何挑選健康的食用油 </H2>
+		<div style=flex-direction:row;>
+			<img style=border-radius:20px; src=products/thrive/Picture5.jpg></img>
+			<p> 油的好壞，取決於基本組成 – 脂肪酸。油品主要由以下幾種脂肪酸構成：</p>
+		</div>
+		<H3> 飽和脂肪酸 (Saturated Fatty Acids, SFA) </H3>
+		<p>
+室溫下通常呈固態， 主要來自動物性油脂，部分植物油如棕櫚油、椰子油也含有較高的飽和脂肪酸。提供身體能量，但攝取過多容易堆積脂肪，並會增加血液中的低密度膽固醇（壞膽固醇）。
+		</p>
+		<H3> 單元不飽和脂肪酸 (Monounsaturated Fatty Acids, MUFA) </H3>
+		<div style=display:block;>
+			<img style=width:30vw;margin-left:2em;float:right; src=products/thrive/Picture6.png></img>
 			<p>
-			We specialize in developing customized body care
-			products that incorporate the therapeutic properties
-			of essential oils. Our products are designed to
-			promote relaxation, rejuvenation, and overall
-			well-being. Through strategic partnerships with
-			educational centres, we offer interest-oriented
-			lessons and workshops, empowering enthusiasts with the
-			knowledge to integrate aromatherapy into their daily
-			lives. Our mission is to establish aromatherapy as a
-			complementary therapy that enhances physical and
-			mental health, fostering a more balanced lifestyle.
+			在室溫下通常呈液體狀態。主要來源： 橄欖油、芥花籽油、花生油、菜籽油、牛油果和芝麻油等。主要成分是 Omega-9 脂肪酸(人體可自行合成，因此屬於非必需脂肪酸)。有助降低壞膽固醇 (LDL)，稍微升高好膽固醇 (HDL)，兼具抗氧化特質。
 			</p>
 		</div>
+		<H3> 多元不飽和脂肪酸 (Polyunsaturated Fatty Acids, PUFA) </H3>
+		<p>
+室溫下呈液體狀。包含 Omega-3 和 Omega-6 脂肪酸(人體無法自行合成，必須從食物中攝取的必需脂肪酸)，主要來源： 葵花籽油、粟米油、大豆油、紅花籽油、果仁及魚油等。現代人飲食中，Omega-6攝入量往往遠高於Omega-3，導致比例失衡，這種狀況會增加發炎風險*。
+		</p>
+		<H3> 煙點 </H3>
+		<p>
+油品的發煙點會因為榨取方法、油品等級、成分比例等因素不同而有所差異。當烹煮的溫度高於油品的發煙點時，油品就會發生變質，並產生不良化學物質，揮發到空氣中，形成可看得見的煙霧。
+		</p>
+	</div>
+
+	<div style=background:#d9583f;color:white;padding:1em;>
+		<H1>Thrive<sup style=font-family:Arial;font-size:x-small;>TM</sup> Algae Oil 適合混入沙律不搶蔬菜原有鮮味，中式炒菜、西式烤焗亦可，高溫炸物同樣安全。</H1>
+		<img src=products/thrive/Picture1.png />
+	</div>
+
+	<div style=color:#a96654;padding:1em;>
+		<H3>資料補充</H3>
+		<p>
+* Omega-3 脂肪酸： 包括 α-亞麻酸 (ALA)、EPA (二十碳五烯酸) 和 DHA (二十二碳六烯酸)。ALA 可在體內代謝成 DHA 和 ARA (花生四烯酸)。身體能少量轉換為DHA，但轉換效率非常低，通常只有不到1-10%。因此，若想有效攝取DHA，直接從富含DHA的食物（如魚油、鮭魚、秋刀魚等）或保健食品海藻油。
+		</p>
+		<p>
+*EPA 為主要的抗發炎脂肪酸；Omega-6 若攝取過多可能促進發炎；Omega-9 有助減少氧化壓力、降低慢性發炎風險。
+		</p>
+	</div>
+
+
+	<div style=background:#d9583f;color:white;padding:1em;>
+		<H1> Thrive<tm>TM</tm> Algae Oil 與其他油品的對比 ：單元不飽和脂肪酸、飽合脂肪、Omega-6、煙點及油品自身氣味 </H1>
+		<p>
+		(資料由Thrive<tm>TM</tm> 官網提供 <a style=color:white; href=https://thriveculinary.com/pages/our-ingredients> https://thriveculinary.com/pages/our-ingredients </a> )
+		</p>
+	</div>
+
+	<div style=background:white;color:#a96654;padding:1em;>
+		<img style=max-width:90vw; src=products/thrive/Picture2.png></img>	
+		<div style=height:4vw;></div>
+		<img style=max-width:90vw; src=products/thrive/Picture3.png></img>	
+		<div style=height:4vw;></div>
+		<img style=max-width:90vw; src=products/thrive/Picture4.png></img>	
+
+	</div>
+
+	<div style=background:#a7f3d0;padding:1em;>
+
+		<H1>AromaBase's Offerings</H1>
 		<div>
 			<H2>Thrive (algae oil) distribution</H2>
                         <p>
@@ -171,6 +221,7 @@
                         same care and attention they devote to their mental
                         and emotional health.
                         </p>
+			<p style=font-size:0.8em;margin-top:0;>click image to enlarge &#x21f1;</p>
 			<div id=gallery style=flex-direction:row; onclick=enlarge(event)>
 				<style>
 					#gallery img {width:25vw;margin:1vw;}
@@ -187,7 +238,22 @@
 				<img src="products/thrive/thrive_longfry_uses_zh.jpg" />
 				<img src="products/thrive/thrive_longfry_zh.jpg" />
 			</div>
-			<p style=font-size:0.8em;margin-top:0;>click to enlarge</p>
+		</div>
+		<div>
+			<H2>Aromatherapy and natural products</H2>
+			<p>
+			We specialize in developing customized body care
+			products that incorporate the therapeutic properties
+			of essential oils. Our products are designed to
+			promote relaxation, rejuvenation, and overall
+			well-being. Through strategic partnerships with
+			educational centres, we offer interest-oriented
+			lessons and workshops, empowering enthusiasts with the
+			knowledge to integrate aromatherapy into their daily
+			lives. Our mission is to establish aromatherapy as a
+			complementary therapy that enhances physical and
+			mental health, fostering a more balanced lifestyle.
+			</p>
 		</div>
 		<div>
 			<div id=rnd style=scroll-margin-top:4.2em;></div>
@@ -209,9 +275,11 @@
 	</div>
 
 	<!-- section -->
+	<!--
 	<div style=background:#67e8f9;padding:1em;>
 		<H2>Gallery</H2>
 	</div>
+	-->
 
 	<!-- banner -->
 	<div style=background:#155e75;color:white;padding:1em;>
